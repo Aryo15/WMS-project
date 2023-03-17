@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="title">
+        <h2>Water Tracker System</h2>
+        <h3>Team Blitz</h3>
+        <p>
+          Here you can track the water quality, quantity and the efficiency of Water usage.
+        </p>
+      </div>
+
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img src="./waterdrop.jpg" alt="" />
+        </article>
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="Water Quality">Water Quality</button>
+            <button class="tab-btn" data-id="Water Quantity">Water Quantity</button>
+            <button class="tab-btn" data-id="Usage Efficiency">Usage Efficiency</button>
+          </div>
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="Water Quality">
+              <h4>Water Quality in ppm</h4>
+              <p>
+                Your water quality is-
+              </p>
+              <ul>
+                <!-- single number -->
+                <li>Quality at inlet-</li><a href="https://nodered.org/" /><span class="number" data-value="150">0</span></a>
+                <li>Quality at outlet-</li><a href="https://nodered.org/" /><span class="number" data-value="300">0</span></a>
+                <!-- end of single number -->
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="Water Quantity">
+              <h4>Total volume in Litres</h4>
+              <p>
+                <li>Water at inlet-</li><a href="https://nodered.org/" /><span class="number" data-value="3000">0</span></a>
+                <li>Water at outlet-</li><a href="https://nodered.org/" /><span class="number" data-value="2800">0</span></a>
+              </p>
+              
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="Usage Efficiency">
+              <h4>Efficiency in percentage</h4>
+              <p>
+                <ul>
+                Your net water usage efficiency is-
+                <li><strong>10</strong></li>
+                </ul>
+              </p>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
